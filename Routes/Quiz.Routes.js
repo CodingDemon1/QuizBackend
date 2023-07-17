@@ -7,7 +7,7 @@ QuizRouter.get("/:id", async (req, res) => {
 
 		const quizes = await QuizModel.find({ _id: QuizId });
 
-		console.log(quizes);
+		// console.log(quizes);
 		res.status(200).json(quizes);
 	} catch (error) {
 		console.log(error);
@@ -18,7 +18,7 @@ QuizRouter.get("/", async (req, res) => {
 	try {
 		const quizes = await QuizModel.find();
 
-		console.log(quizes);
+		// console.log(quizes);
 		res.status(200).json(quizes);
 	} catch (error) {
 		console.log(error);
